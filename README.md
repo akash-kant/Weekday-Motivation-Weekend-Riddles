@@ -53,10 +53,6 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 - 📝 Add more messages and riddles in `messages.js`.
 - 🎨 Customize styles in `index.ejs` for a personalized touch.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE) - feel free to remix and share!
-
 ## How to Contribute
 
 Your contributions and ideas are always welcome! Check out our [Contributing Guide](CONTRIBUTING.md) for more details.
