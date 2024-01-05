@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation and Riddles</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ecf0f1; /* Light grey background */
+        }
+
+        .message-box {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #3498db; /* Blue background for weekdays */
+            color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease; /* Smooth color transition */
+        }
+
+        /* Hover effect for the box */
+        .message-box:hover {
+            background-color: #e74c3c; /* Red background for weekends on hover */
+        }
+
+        /* Center the text inside the box */
+        h1, p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <h1>Hey, it's <%= dayType %></h1>
+        <p><%= content %></p>
+        <p>Date: <%= currentDate %></p>
+    </div>
+</body>
+</html>
