@@ -11,17 +11,38 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            margin: 0;
-            background-color: #ecf0f1; /* Light grey background */
+            margin: 0; /* Default background image for weekdays */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url('<%= backgroundImage %>');
+        }
+
+        .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-box, .message-box {
+            width: 300px; /* Adjust the width as needed */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px; /* Margin between image and message boxes */
+        }
+
+        .image-box {
+            background: url("<%= randomImage %>"); /* Use the random image path */
+            background-size: cover;
+            background-position: center;
+            height: 200px; /* Set the height for the image box */
         }
 
         .message-box {
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
             background-color: #3498db; /* Blue background for weekdays */
             color: #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
             transition: background-color 0.3s ease; /* Smooth color transition */
         }
 
@@ -34,13 +55,27 @@
         h1, p {
             margin: 0;
         }
+
+        .day-date {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50; /* Dark gray text color */
+        }
     </style>
 </head>
 <body>
-    <div class="message-box">
-        <h1>Hey, it's <%= dayType %></h1>
-        <p><%= content %></p>
-        <p>Date: <%= currentDate %></p>
+    <div class="container">
+        <div class="image-box">
+            <img src="<%= randomImage %>" alt="Random Image" style="max-width: 100%; border-radius: 10px;">    
+        </div>
+        <div class="message-box">
+            <div class="day-date">
+                <span id="day"><%= currentDay %></span>, <span id="date"><%= currentDate %></span>
+            </div>
+            <h1>Hey, it's <%= dayType %></h1>
+            <p><%= content %></p>
+        </div>
     </div>
 </body>
 </html>
