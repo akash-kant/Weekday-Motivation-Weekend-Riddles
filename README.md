@@ -44,9 +44,10 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 ## Project Structure
 
 - 📁 `views`: EJS templates, including `index.ejs`.
+- 📁 `public`: Directory for static assets, including background images.
 - 📄 `index.js`: Main server file with Express setup.
 - 📄 `messages.js`: Module for day of the week, messages, and riddles.
-- 🖼️ `weekday.jpg` & `weekend.jpg`: Background images for weekdays and weekends.
+- 🖼️ `public/weekday.jpg` & `public/weekend.jpg`: Background images for weekdays and weekends.
 
 ## Customization
 
@@ -55,11 +56,6 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 
 ## How to Contribute
 
-Your contributions and ideas are always welcome! Check out our [Contributing Guide](CONTRIBUTING.md) for more details.
-
-## Acknowledgments
-
-- Motivational messages inspired by [source].
-- Riddles inspired by [source].
+Your contributions and ideas are always welcome! You can also message me on linkedin.
 
 Happy coding! 🚀✨
